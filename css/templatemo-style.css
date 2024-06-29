@@ -603,3 +603,20 @@ p {
     margin-top: 20px;
   }
 }
+
+.contact-box {
+  border: 2px solid #000; /* Changez la couleur et l'épaisseur de la bordure selon vos besoins */
+  padding: 20px; /* Ajustez le rembourrage pour plus d'espace autour du contenu */
+  margin-bottom: 20px; /* Espace en bas de chaque section pour une meilleure séparation */
+  border-radius: 10px; /* Pour des coins arrondis, ajustez selon vos préférences */
+  background-color: #806e6e; /* Arrière-plan de chaque boîte, ajustez selon vos préférences */
+}
+
+/* Optionnel: ajouter du style pour les liens pour qu'ils s'affichent mieux */
+.tm-contact-item-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+

@@ -30,14 +30,25 @@ function sendMail(){
         "</table>" +
         "</div>";
 
-    Email.send({
-        SecureToken: "25e2b0c1-7ccb-474e-9bc6-dc260847ff6f",
+        Email.send({
+            SecureToken: "538bd5c4-15a5-4c94-bc83-7d7fd049ee26",
+            To : email,
+            From : "devilmanpro.08@gmail.com",
+            Subject : "Nouvelle demande - Watt&Water",
+            Body : body,
+            ContentType : "text/html; charset=utf-8"
+        }).then(
+            message => alert(message)
+        );
+    /*Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "jamalassoubgs@gmail.com",
+        Password : "Balid2016",
         To : 'jamalassoubgs@gmail.com',
         From : "jamalassoubgs@gmail.com",
-        Subject : "Nouvelle demande - Nad&Co",
-        Body : body,
-        ContentType : "text/html; charset=utf-8"
+        Subject : "This is the subject",
+        Body : "And this is the body"
     }).then(
-        message => alert("Votre message a été envoyé !")
-    );
+      message => alert(message)
+    );*/
 }
