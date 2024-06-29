@@ -209,25 +209,26 @@
       <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
         <form onsubmit="sendMail(); return false;" class="p-5 bg-light border rounded">
           <div class="form-group">
-            <input name="name" type="text" placeholder="Votre nom" class="form-control" required />
+            <input id="name" name="name" type="text" placeholder="Votre nom" class="form-control" required />
           </div>
           <div class="form-group">
-            <input name="email" type="email" placeholder="Votre email" class="form-control" required />
+            <input id="email" name="email" type="email" placeholder="Votre email" class="form-control" required />
           </div>
           <div class="form-group">
-            <input name="subject" type="text" placeholder="Sujet" class="form-control" required />
+            <input id="subject" name="subject" type="text" placeholder="Sujet" class="form-control" required />
           </div>
           <div class="form-group">
-            <textarea name="message" placeholder="Votre message" class="form-control" required></textarea>
+            <textarea id="message" name="message" placeholder="Votre message" class="form-control" required></textarea>
           </div>
     
-          <button type="submit" class="btn btn-primary">Envoyer</button>
-        </form>
+          <button type="submit" class="btn btn-primary" name="submit">Envoyer</button>
+        </form>        
       </div>
-    
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="js/send_email.js"></script>
     
       <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-        <!-- Icônes des réseaux sociaux -->
+        <!-- Social media icons -->
         <div class="social-icons">
           <b>Rejoignez-nous sur nos réseaux sociaux:<br></b>
           <a href="https://www.facebook.com/share/bLwmfwWHK1homPro/?mibextid=WC7FNe" target="_blank">
@@ -246,12 +247,13 @@
   <footer class="text-center small tm-footer">
     <p class="mb-0">
       Copyright &copy; 2019 Nad&Co
-      <!-- Icônes des réseaux sociaux -->
+      <!-- Social media icons -->
     </p>
   </footer>
 </section>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    
     <script src="js/jquery-1.9.1.min.js"></script>     
     <script src="slick/slick.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>

@@ -1,4 +1,5 @@
 function sendMail(){
+    console.log("l'envoi a été cliqué");
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var subject = document.getElementById('subject').value;
@@ -37,6 +38,6 @@ function sendMail(){
         Body : body,
         ContentType : "text/html; charset=utf-8"
     }).then(
-        message => alert("Votre message a était envoyé !")
+        message => alert("Votre message a été envoyé !")
     );
 }
