@@ -107,7 +107,7 @@
           <i class="fas fa-4x fa-clock text-center tm-icon"></i>
           <h4 class="text-center tm-text-primary mb-4">Efficacité</h4>
           <p>
-            Notre approche axée sur l'efficacité permet de minimiser les délais et de maximiser la satisfaction de nos clients à chaque étape du transport.
+            Notre approche axée sur l'efficacité permet de minimiser les délais et de maximiser la satisfaction de nos clients à chaque étape du transport. De plus, il y a moyen de faire de l'express, garantissant ainsi des livraisons encore plus rapides pour répondre aux besoins urgents de nos clients.
           </p>
         </div>
         <div class="col-lg-4 mt-5 mt-lg-0">
@@ -184,8 +184,8 @@
         <p class="mb-5">
           Pour toute question concernant nos services de transport routier de fret, ou pour obtenir un devis personnalisé, n'hésitez pas à nous contacter. Notre équipe est à votre disposition pour répondre à vos besoins logistiques avec efficacité et professionnalisme.
         </p>
-      </div>
-      
+      </div>   
+
       <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
         <a href="tel:0472325306" class="tm-contact-item-link">
           <i class="fas fa-3x fa-phone mr-4"></i>
@@ -205,8 +205,27 @@
           <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
           <span class="mb-0">Localisation sur Maps</span>
         </a>
+      </div>      
+      <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+        <form onsubmit="sendMail(); return false;" class="p-5 bg-light border rounded">
+          <div class="form-group">
+            <input name="name" type="text" placeholder="Votre nom" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <input name="email" type="email" placeholder="Votre email" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <input name="subject" type="text" placeholder="Sujet" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Votre message" class="form-control" required></textarea>
+          </div>
+    
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
       </div>
-      
+    
+    
       <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
         <!-- Icônes des réseaux sociaux -->
         <div class="social-icons">
@@ -228,21 +247,11 @@
     <p class="mb-0">
       Copyright &copy; 2019 Nad&Co
       <!-- Icônes des réseaux sociaux -->
-      <div class="social-icons">
-        <a href="https://www.facebook.com/share/bLwmfwWHK1homPro/?mibextid=WC7FNe" target="_blank">
-          <img src="img/facebookLogo.png" alt="Facebook" style="width: 30px; height: 30px;"/>
-        </a>
-        <a href="https://www.instagram.com/nad_co_srl?igsh=dWo4NXN6enJrMmh2&utm_source=qr" target="_blank">
-          <img src="img/instagramLogo.png" alt="Instagram" style="width: 30px; height: 30px;"/>
-        </a>
-        <a href="https://www.tiktok.com/@nadcosrl?_t=8nWs2lDGUmP&_r=1" target="_blank">
-          <img src="img/tiktokLogo.png" alt="TikTok" style="width: 30px; height: 30px;"/>
-        </a>
-      </div>
     </p>
   </footer>
 </section>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/jquery-1.9.1.min.js"></script>     
     <script src="slick/slick.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
